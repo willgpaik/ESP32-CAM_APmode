@@ -4,3 +4,7 @@
 - Once powered, use portable device with WIFI enabled to connect
   - Initial SSID: testAP-ardu
   - Initial Password: 123456789
+- ESP32-CAM with motherboard seems to deactivate GND pin on 3V3 side
+  - When ESP32-CAM-MB without motherboard is connected straight to power source (5V, GND), it doesn't turn on
+  - Connect GND next to 5V pin instead (works on both ESP32-CAM only and ESP32-CAM with MB)
+![ESP32-CAM pinout](ESP32-CAM-pinout.jpg)
